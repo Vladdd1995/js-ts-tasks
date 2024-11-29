@@ -9,11 +9,11 @@
  */
 module.exports.replacement = function replacement(arr) {
   return arr.map(num => {
-    const absNum = Math.abs(num);
-    if (absNum < 10) return 1;
-    if (absNum < 100) return 2;
-    if (absNum < 1000) return 3;
-    return 4;
+  const absNum = Math.abs(num);
+  if (absNum < 10) return 1;
+  if (absNum < 100) return 2;
+  if (absNum < 1000) return 3;
+  return 4;
   });
 
 };
