@@ -6,8 +6,8 @@
  */
 module.exports.removeItems = function removeItems(arr, value) {
   return arr.filter(item => {
-    if (typeof item === 'object' && item !== null && typeof value === 'object' && value !== null) {
-      return JSON.stringify(item) !== JSON.stringify(value);
+  if (typeof item === 'object' && item !== null && typeof value === 'object' && value !== null) {
+  return JSON.stringify(item) !== JSON.stringify(value);
     }
     return item !== value;
   });
