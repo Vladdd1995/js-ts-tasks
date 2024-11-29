@@ -14,7 +14,8 @@ module.exports.getMaximalSequence = function getMaximalSequence(arr) {
       currentSequence.push(arr[i]);
     } else {
       if (currentSequence.length > maxSequence.length) {
-        maxSequence = currentSequence;
+    maxSequence = currentSequence;
+    
       }
       currentSequence = [arr[i]];
     }
